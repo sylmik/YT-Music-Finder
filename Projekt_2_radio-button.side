@@ -1,0 +1,97 @@
+{
+  "id": "d818a781-6d00-418e-9ae4-9bd4a1c363ab",
+  "version": "2.0",
+  "name": "Projekt_2_radio-button",
+  "url": "https://demoqa.com",
+  "tests": [{
+    "id": "d56d02c1-e798-4601-a44f-12c4b34d254d",
+    "name": "atutomatyzacja_asercja_test_ipressive",
+    "commands": [{
+      "id": "fc6a669d-f52b-419b-9053-95e9165a6f88",
+      "comment": "",
+      "command": "open",
+      "target": "/radio-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb7ba823-5d5e-4a24-92f0-fe11cda4218b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1066x968",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa5d85f5-79c1-44c7-965f-d673e50dd5d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(3) > .custom-control-label",
+      "targets": [
+        ["css=.custom-control:nth-child(3) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div[2]/div[2]/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Impressive')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b056dcc3-eaeb-4359-8e04-0fd5455773b7",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d0ae718-5304-401e-ad4a-6e015c09097a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1067e5a1-3ce8-4aac-90cd-9be2d85a57e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dec1ae39-040d-4bc7-b6b3-51b815fec1cf",
+      "comment": "",
+      "command": "",
+      "target": "css=.col-12 > div:nth-child(4)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d19686f-491d-4f0b-85cc-698527fc4f1c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[2]/div/div/div/div[2]/div[2]/p/span",
+      "targets": [
+        ["css=.text-success", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div[2]/div[2]/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Impressive')]", "xpath:innerText"]
+      ],
+      "value": "Impressive"
+    }]
+  }],
+  "suites": [{
+    "id": "cbc7958c-84b2-4c53-b089-a4c53d9bb1d9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d56d02c1-e798-4601-a44f-12c4b34d254d"]
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}

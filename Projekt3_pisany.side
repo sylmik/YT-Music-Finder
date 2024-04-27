@@ -1,0 +1,55 @@
+{
+  "id": "ddd96cfd-ad1b-4582-a2c1-5669543cb6df",
+  "version": "2.0",
+  "name": "Projekt3_pisany",
+  "url": "https://demoqa.com",
+  "tests": [{
+    "id": "4e7aa790-e39c-4acc-97e4-7c5d1bd94546",
+    "name": "test1",
+    "commands": [{
+      "id": "98a692af-7b8e-406d-8070-da9a5edb518a",
+      "comment": "",
+      "command": "open",
+      "target": "/text-box",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce427afd-73b9-4f8a-af5d-125de0b830df",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[@id='userName-wrapper']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Piesek Leszek"
+    }, {
+      "id": "f8b15975-1564-4edc-8589-1587bfb539c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9c556f6a-5862-42e1-a941-1db9ad294da3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}
